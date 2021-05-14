@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/05/14 17:20:35 by hyeolee           #+#    #+#             */
+/*   Updated: 2021/05/14 19:02:33 by hyeolee          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 # define SUCCESS 1
@@ -41,6 +53,10 @@ void				push_b(t_stack **b_stack, t_stack **a_stack);
 void				rotate_a(t_stack **a_stack);
 void				rotate_b(t_stack **b_stack);
 void				rotate_s(t_stack **a_stack, t_stack **b_stack);
+//reverse_rotate_command.c
+void				reverse_rotate_a(t_stack **a_stack);
+void				reverse_rotate_b(t_stack **b_stack);
+void				reverse_rotate_s(t_stack **a_stack, t_stack **b_stack);
 //utils.c
 void				swap_value(int *value1, int *value2);
 #endif
