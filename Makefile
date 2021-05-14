@@ -10,7 +10,10 @@ OBJS =	./main.c	\
 		./srcs/init_stack.c	\
 		./srcs/stack_list/stack_lstnew.c \
 		./srcs/stack_list/stack_lstadd_back.c \
-		./srcs/stack_list/stack_lstadd_front.c
+		./srcs/stack_list/stack_lstadd_front.c \
+		./srcs/stack_list/stack_lstclear.c \
+		./srcs/stack_list/stack_lstdelone.c \
+		./srcs/utils.c
 
 
 all : $(TARGET)

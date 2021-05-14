@@ -27,7 +27,7 @@ void				stack_lstadd_front(t_stack **lst, t_stack *new);
 //stack_lstnew.c
 t_stack				*stack_lstnew(int value);
 //stack_lstclear.c
-void				stack_lstclear(t_list **lst, void (*del)(void *));
+void				stack_lstclear(t_stack **lst, void (*del)(void *));
 //stack_lstdelone.c
 void				stack_lstdelone(t_stack *lst, void (*del)(void *));
 //swap_command.c
@@ -37,4 +37,10 @@ void				swap_s(t_stack **a_stack, t_stack **b_stack);
 //push_command.c
 void				push_a(t_stack **a_stack, t_stack **b_stack);
 void				push_b(t_stack **b_stack, t_stack **a_stack);
+//rotate_command.c
+void				rotate_a(t_stack **a_stack);
+void				rotate_b(t_stack **b_stack);
+void				rotate_s(t_stack **a_stack, t_stack **b_stack);
+//utils.c
+void				swap_value(int *value1, int *value2);
 #endif
