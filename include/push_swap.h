@@ -35,5 +35,6 @@ void				swap_a(t_stack **a_stack);
 void				swap_b(t_stack **b_stack);
 void				swap_s(t_stack **a_stack, t_stack **b_stack);
 //push_command.c
-
+void				push_a(t_stack **a_stack, t_stack **b_stack);
+void				push_b(t_stack **b_stack, t_stack **a_stack);
 #endif
