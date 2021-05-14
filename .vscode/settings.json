@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "ratio": "c",
+        "libft.h": "c",
+        "push_swap.h": "c"
+    }
+}
