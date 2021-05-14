@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 17:20:35 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/14 19:02:33 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/14 21:07:28 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,4 +59,9 @@ void				reverse_rotate_b(t_stack **b_stack);
 void				reverse_rotate_s(t_stack **a_stack, t_stack **b_stack);
 //utils.c
 void				swap_value(int *value1, int *value2);
+//exec_command.c
+void				exec_command(t_stack **a_stack, t_stack **b_stack,
+char *cmd);
+//start_sort.c
+void				start_sort(t_stack **a_stack, t_stack **b_stack);
 #endif

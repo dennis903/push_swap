@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 20:55:47 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/14 21:03:26 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/14 21:04:04 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,4 @@ void			exec_command(t_stack **a_stack, t_stack **b_stack, char *cmd)
 		rotate_b(b_stack);
 	else if (ft_strcmp(cmd, "rs") == 0)
 		rotate_s(a_stack, b_stack);
-
 }
