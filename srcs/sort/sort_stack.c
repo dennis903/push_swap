@@ -1,21 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   start_sort.c                                       :+:      :+:    :+:   */
+/*   sort_stack.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/14 21:06:10 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/15 19:49:40 by hyeolee          ###   ########.fr       */
+/*   Created: 2021/05/15 19:28:23 by hyeolee           #+#    #+#             */
+/*   Updated: 2021/05/15 20:11:43 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/push_swap.h"
 
-void		start_sort(t_stack **a_stack, t_stack **b_stack)
+static void		sort_three_index(t_stack **a_stack)
 {
-	int		range;
+	
+}
 
-	range = stack_lstsize(*a_stack);
-	sort_a_to_b(a_stack, b_stack, range);
+static int		check_return_condition(t_stack **a_stack, int range)
+{
+	
+}
+
+void			sort_a_to_b(t_stack **a_stack, t_stack **b_stack, int range)
+{
+	int			i;
+
+	if (check_return_condition(a_stack, range))
+		return ;
 }

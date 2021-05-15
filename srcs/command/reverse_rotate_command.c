@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 17:10:27 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/14 17:26:49 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/15 19:26:16 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void			reverse_rotate_b(t_stack **b_stack)
 	}
 }
 
-void			reverse_rotate_s(t_stack **a_stack, t_stack **b_stack)
+void			reverse_rotate_r(t_stack **a_stack, t_stack **b_stack)
 {
 	reverse_rotate_a(a_stack);
 	reverse_rotate_b(b_stack);

@@ -13,9 +13,11 @@ OBJS =	./main.c	\
 		./srcs/stack_list/stack_lstadd_front.c \
 		./srcs/stack_list/stack_lstclear.c \
 		./srcs/stack_list/stack_lstdelone.c \
+		./srcs/stack_list/stack_lstsize.c	\
 		./srcs/utils.c \
 		./srcs/sort/exec_command.c \
-		./srcs/sort/start_sort.c
+		./srcs/sort/start_sort.c	\
+		./srcs/sort/sort_stack.c
 
 all : $(TARGET)
 
