@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 17:20:35 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/16 14:30:03 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/16 17:30:31 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,7 @@ void				reverse_rotate_r(t_stack **a_stack, t_stack **b_stack);
 //utils.c
 void				swap_value(int *value1, int *value2);
 t_part				init_count(void);
+int					find_max_index(t_stack **stack);
 //exec_command.c
 void				a_cmd(t_stack **a_stack, char *cmd);
 void				b_cmd(t_stack **b_stack, char *cmd);
@@ -82,11 +83,26 @@ void				start_sort(t_stack **a_stack, t_stack **b_stack);
 //sort_stack.c
 void				sort_a_to_b(t_stack **a_stack, t_stack **b_stack,
 int range);
+void				sort_b_to_a(t_stack **a_stack, t_stack **b_stack,
+int range);
 //sort_utils.c
 void				select_pivot(int *big_pivot, int *small_pivot,
 t_stack **stack);
-void				reverse_stack(t_part part,
-t_stack **a_stack, t_stack **b_stack)
-//check_return_condition.c
-int					check_return_condition(t_stack **a_stack, int range);
+void				reverse_a_stack(t_part part,
+t_stack **a_stack, t_stack **b_stack);
+void				reverse_b_stack(t_part part,
+t_stack **a_stack, t_stack **b_stack);
+//check_a_stack_return_condition.c
+int					check_a_stack_return_condition(t_stack **a_stack,
+int range);
+//check_b_stack_return_condition.c
+int					check_b_stack_return_condition(t_stack **b_stack,
+int range);
+//three_value_case.c
+int					case1(t_stack *stack);
+int					case2(t_stack *stack);
+int					case3(t_stack *stack);
+int					case4(t_stack *stack);
+int					case5(t_stack *stack);
+int					case6(t_stack *stack);
 #endif

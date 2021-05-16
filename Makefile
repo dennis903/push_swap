@@ -16,11 +16,13 @@ OBJS =	./main.c	\
 		./srcs/sort/start_sort.c	\
 		./srcs/sort/sort_stack.c	\
 		./srcs/sort/sort_utils.c	\
-		./srcs/sort/
 		./srcs/init_stack.c	\
 		./srcs/utils.c \
 		./srcs/check_valid_argument.c \
-		./srcs/check_return_condition.c
+		./srcs/check_a_stack_return_condition.c	\
+		./srcs/check_b_stack_return_condition.c	\
+		./srcs/three_value_case1.c	\
+		./srcs/three_value_case2.c
 
 all : $(TARGET)
 

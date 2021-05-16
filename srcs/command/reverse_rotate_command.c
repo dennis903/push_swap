@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 17:10:27 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/15 19:26:16 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/16 19:31:28 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void			reverse_rotate_a(t_stack **a_stack)
 	if (!(*a_stack))
 		return ;
 	temp = *a_stack;
-	while (temp->next)
+	while (temp)
 		temp = temp->next;
 	while (temp->prev)
 	{
@@ -35,7 +35,7 @@ void			reverse_rotate_b(t_stack **b_stack)
 	if (!(*b_stack))
 		return ;
 	temp = *b_stack;
-	while (temp->next)
+	while (temp)
 		temp = temp->next;
 	while (temp->prev)
 	{
