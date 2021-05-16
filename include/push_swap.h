@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 17:20:35 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/15 21:21:37 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/16 14:30:03 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,14 @@ typedef struct		s_stack
 	struct s_stack	*next;
 }					t_stack;
 
+typedef struct		s_part
+{
+	int				max_count;
+	int				mid_count;
+	int				min_count;
+	int				big_pivot;
+	int				small_pivot;
+}					t_part;
 //check_valid_argument.c
 int					check_valid_argument(int argc, char **argv);
 //init_stack.c
@@ -61,6 +69,7 @@ void				reverse_rotate_b(t_stack **b_stack);
 void				reverse_rotate_r(t_stack **a_stack, t_stack **b_stack);
 //utils.c
 void				swap_value(int *value1, int *value2);
+t_part				init_count(void);
 //exec_command.c
 void				a_cmd(t_stack **a_stack, char *cmd);
 void				b_cmd(t_stack **b_stack, char *cmd);
@@ -73,6 +82,11 @@ void				start_sort(t_stack **a_stack, t_stack **b_stack);
 //sort_stack.c
 void				sort_a_to_b(t_stack **a_stack, t_stack **b_stack,
 int range);
+//sort_utils.c
+void				select_pivot(int *big_pivot, int *small_pivot,
+t_stack **stack);
+void				reverse_stack(t_part part,
+t_stack **a_stack, t_stack **b_stack)
 //check_return_condition.c
 int					check_return_condition(t_stack **a_stack, int range);
 #endif

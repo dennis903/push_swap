@@ -6,15 +6,17 @@ OBJS =	./main.c	\
 		./srcs/command/reverse_rotate_command.c \
 		./srcs/command/rotate_command.c \
 		./srcs/command/swap_command.c \
+		./srcs/command/exec_command.c \
 		./srcs/stack_list/stack_lstnew.c \
 		./srcs/stack_list/stack_lstadd_back.c \
 		./srcs/stack_list/stack_lstadd_front.c \
 		./srcs/stack_list/stack_lstclear.c \
 		./srcs/stack_list/stack_lstdelone.c \
 		./srcs/stack_list/stack_lstsize.c	\
-		./srcs/sort/exec_command.c \
 		./srcs/sort/start_sort.c	\
 		./srcs/sort/sort_stack.c	\
+		./srcs/sort/sort_utils.c	\
+		./srcs/sort/
 		./srcs/init_stack.c	\
 		./srcs/utils.c \
 		./srcs/check_valid_argument.c \
