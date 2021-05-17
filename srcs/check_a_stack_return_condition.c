@@ -6,13 +6,13 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/15 20:12:46 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/17 16:44:23 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/17 20:33:55 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-static void	sort_a_three_value(t_stack **a_stack)
+void		sort_a_three_value(t_stack **a_stack)
 {
 	if (case2(*a_stack))
 	{
@@ -43,7 +43,7 @@ static void	sort_a_stack(t_stack **a_stack, int range)
 		sort_a_three_value(a_stack);
 }
 
-static int	check_a_sorted(t_stack *a_stack, int range)
+int	check_a_sorted(t_stack *a_stack, int range)
 {
 	t_stack	*temp;
 	int		i;

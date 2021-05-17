@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 17:20:35 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/17 14:32:19 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/17 20:35:15 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,8 @@ int					choose_big_pivot(int *sorted, int range);
 //check_a_stack_return_condition.c
 int					check_a_stack_return_condition(t_stack **a_stack,
 int range);
+void				sort_a_three_value(t_stack **a_stack);
+int					check_a_sorted(t_stack *a_stack, int range);
 //check_b_stack_return_condition.c
 int					check_b_stack_return_condition(t_stack **b_stack,
 int range);
@@ -109,7 +111,10 @@ int					case3(t_stack *stack);
 int					case4(t_stack *stack);
 int					case5(t_stack *stack);
 int					case6(t_stack *stack);
-
+//sort_five_value.c
+void				sort_five_value(t_stack **a_stack, t_stack **b_stack);
+//sort_four_value.c
+void				sort_four_value(t_stack **a_stack, t_stack **b_stack);
 void				print_a(t_stack **a_stack);
 void				print_b(t_stack **b_stack);
 #endif
