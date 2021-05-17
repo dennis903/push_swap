@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 15:07:15 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/14 17:11:56 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/17 10:43:50 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void			push_a(t_stack **a_stack, t_stack **b_stack)
 	{
 		temp = (*b_stack)->next;
 		stack_lstdelone(*b_stack, free);
+		temp->prev = NULL;
 		*b_stack = temp;
 	}
 }
@@ -42,6 +43,7 @@ void			push_b(t_stack **b_stack, t_stack **a_stack)
 	{
 		temp = (*a_stack)->next;
 		stack_lstdelone(*a_stack, free);
+		temp->prev = NULL;
 		*a_stack = temp;
 	}
 }

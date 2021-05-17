@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 15:39:49 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/16 17:06:22 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/17 17:48:06 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static void	sort_b_stack(t_stack **b_stack, int range)
 		if ((*b_stack)->value < (*b_stack)->next->value)
 			b_cmd(b_stack, "sb");
 	}
-	else if (range == 3)
+	else if (stack_lstsize(*b_stack) == 3)
 		sort_b_three_value(b_stack);
 }
 
@@ -64,7 +64,7 @@ int			check_b_stack_return_condition(t_stack **b_stack, int range)
 {
 	if (check_b_sorted(*b_stack, range))
 		return (SUCCESS);
-	else if (range <= 3)
+	else if (range < 3 || stack_lstsize(*b_stack) == 3)
 	{
 		sort_b_stack(b_stack, range);
 		return (SUCCESS);

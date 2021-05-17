@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 16:11:20 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/16 17:08:04 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/17 17:47:16 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ int				case1(t_stack *stack)
 {
 	if (stack->value < stack->next->value)
 		if (stack->value < stack->next->next->value)
-			return (SUCCESS);
+			if (stack->next->value < stack->next->next->value)
+				return (SUCCESS);
 	return (FAILED);
 }
 

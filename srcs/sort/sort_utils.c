@@ -6,18 +6,20 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 14:25:11 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/16 19:16:23 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/17 15:51:31 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/push_swap.h"
 
-void		select_pivot(int *big_pivot, int *small_pivot, t_stack **stack)
+void		select_pivot(int *big, int *small, int range, t_stack **stack)
 {
-	*big_pivot = (*stack)->value;
-	*small_pivot = (*stack)->next->value;
-	if (*small_pivot > *big_pivot)
-		swap_value(big_pivot, small_pivot);
+	int		*sorted_temp;
+
+	sorted_temp = sort_temporary(stack, range);
+	*small = choose_small_pivot(sorted_temp, range);
+	*big = choose_big_pivot(sorted_temp, range);
+	free(sorted_temp);
 }
 
 void		reverse_a_stack(t_part part, t_stack **a_stack, t_stack **b_stack)

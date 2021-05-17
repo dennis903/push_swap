@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 16:52:41 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/15 19:26:15 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/17 11:23:08 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void			rotate_a(t_stack **a_stack)
 		swap_value(&(temp->value), &(temp->next->value));
 		temp = temp->next;
 	}
+	temp = *a_stack;
 }
 
 void			rotate_b(t_stack **b_stack)

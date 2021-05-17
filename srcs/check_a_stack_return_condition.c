@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/15 20:12:46 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/16 17:03:15 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/17 16:44:23 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static void	sort_a_stack(t_stack **a_stack, int range)
 		if ((*a_stack)->value > (*a_stack)->next->value)
 			a_cmd(a_stack, "sa");
 	}
-	else if (range == 3)
+	else if (stack_lstsize(*a_stack))
 		sort_a_three_value(a_stack);
 }
 
@@ -64,7 +64,7 @@ int			check_a_stack_return_condition(t_stack **a_stack, int range)
 {
 	if (check_a_sorted(*a_stack, range))
 		return (SUCCESS);
-	else if (range <= 3)
+	else if (range < 3 || stack_lstsize(*a_stack) == 3)
 	{
 		sort_a_stack(a_stack, range);
 		return (SUCCESS);

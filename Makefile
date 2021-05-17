@@ -16,6 +16,7 @@ OBJS =	./main.c	\
 		./srcs/sort/start_sort.c	\
 		./srcs/sort/sort_stack.c	\
 		./srcs/sort/sort_utils.c	\
+		./srcs/sort/sort_utils2.c	\
 		./srcs/init_stack.c	\
 		./srcs/utils.c \
 		./srcs/check_valid_argument.c \
