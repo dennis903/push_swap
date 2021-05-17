@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 21:06:10 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/17 19:30:28 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/17 21:47:51 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,6 @@ void		start_sort(t_stack **a_stack, t_stack **b_stack)
 		sort_four_value(a_stack, b_stack);
 	else
 		sort_a_to_b(a_stack, b_stack, range);
+	if (*a_stack)
+		stack_lstclear(a_stack, free);
 }

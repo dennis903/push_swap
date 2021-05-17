@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 17:20:35 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/17 20:35:15 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/17 21:32:11 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,8 @@ void				reverse_a_stack(t_part part,
 t_stack **a_stack, t_stack **b_stack);
 void				reverse_b_stack(t_part part,
 t_stack **a_stack, t_stack **b_stack);
+int					is_a_sorted_clear(t_stack *a_stack);
+int					is_b_sorted_clear(t_stack *b_stack);
 //sort_utils2.c
 int					*sort_temporary(t_stack **stack, int range);
 int					choose_small_pivot(int *sorted, int range);

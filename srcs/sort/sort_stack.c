@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/15 19:28:23 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/17 16:44:43 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/17 21:52:20 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static t_part	b_to_a_part(t_stack **a_stack, t_stack **b_stack, int range)
 		{
 			push_cmd(a_stack, b_stack, "pa");
 			part.max_count++;
-			if ((*a_stack)->value <= part.big_pivot)
+			if ((*a_stack)->value < part.big_pivot)
 			{
 				a_cmd(a_stack, "ra");
 				part.mid_count++;
@@ -55,7 +55,7 @@ static t_part	a_to_b_part(t_stack **a_stack, t_stack **b_stack, int range)
 	i = 0;
 	while (i < range)
 	{
-		if ((*a_stack)->value >= part.big_pivot)
+		if ((*a_stack)->value > part.big_pivot)
 		{
 			a_cmd(a_stack, "ra");
 			part.max_count++;
