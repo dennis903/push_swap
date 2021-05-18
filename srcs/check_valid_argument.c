@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 14:53:42 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/14 17:12:04 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/18 15:38:45 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,16 +80,19 @@ static int		is_in_int_max(int argc, char **argv)
 
 int				check_valid_argument(int argc, char **argv)
 {
+	int			checker;
+
+	checker = 1;
 	if (argc > 1)
 	{
-		if (!is_valid_number(argc, argv))
-			return (FAILED);
 		if (!is_in_int_max(argc, argv))
-			return (FAILED);
-		if (!is_not_duplicated(argc, argv))
-			return (FAILED);
-		return (1);
+			checker = 0;
+		else if (!is_valid_number(argc, argv))
+			checker = 0;
+		else if (!is_not_duplicated(argc, argv))
+			checker = 0;
+		return (checker);
 	}
 	else
-		return (1);
+		return (checker);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hyeolee <hyeolee@42seoul.kr>               +#+  +:+       +#+        */
+/*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/30 12:27:32 by hyeolee           #+#    #+#             */
-/*   Updated: 2020/11/04 17:58:57 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/18 15:26:26 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int					ft_isdigit(int c);
 int					ft_isascii(int c);
 int					ft_isalnum(int c);
 void				*ft_calloc(size_t count, size_t size);
-int					ft_atoi(const char *str);
+long long			ft_atoi(const char *str);
 int					ft_isalpha(int c);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);

@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 14:53:48 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/14 17:12:12 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/18 15:27:47 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void			init_a_stack(t_stack **a_stack, int argc, char **argv)
 	i = 1;
 	while (i <= count_argv)
 	{
-		stack_lstadd_back(a_stack, stack_lstnew(ft_atoi(argv[i])));
+		stack_lstadd_back(a_stack, stack_lstnew((int)ft_atoi(argv[i])));
 		i++;
 	}
 }

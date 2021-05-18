@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 15:10:53 by hyeolee           #+#    #+#             */
-/*   Updated: 2020/10/15 17:15:06 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/18 15:37:18 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int						is_in(char c)
 	return (0);
 }
 
-int						ft_atoi(const char *str)
+long long				ft_atoi(const char *str)
 {
 	int					minus;
 	unsigned long long	result;

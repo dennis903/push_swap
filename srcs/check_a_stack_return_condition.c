@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/15 20:12:46 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/17 20:33:55 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/18 15:47:26 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static void	sort_a_stack(t_stack **a_stack, int range)
 		sort_a_three_value(a_stack);
 }
 
-int	check_a_sorted(t_stack *a_stack, int range)
+int			check_a_sorted(t_stack *a_stack, int range)
 {
 	t_stack	*temp;
 	int		i;

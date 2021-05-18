@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 14:25:11 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/17 21:32:16 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/18 13:29:31 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,16 +62,19 @@ void		reverse_b_stack(t_part part, t_stack **a_stack, t_stack **b_stack)
 	}
 }
 
-int			is_a_sorted_clear(t_stack *a_stack)
+int			is_a_sorted_clear(t_stack *a_stack, int big_pivot, int range)
 {
 	t_stack	*temp;
+	int		i;
 
+	i = 0;
 	temp = a_stack;
-	while (temp->next)
+	while (i < range)
 	{
-		if (temp->value > temp->next->value)
+		if (temp->value < big_pivot)
 			return (FAILED);
 		temp = temp->next;
+		i++;
 	}
 	return (SUCCESS);
 }

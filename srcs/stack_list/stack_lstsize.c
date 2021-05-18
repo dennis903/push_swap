@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/15 19:44:46 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/15 19:48:46 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/18 15:53:32 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int				stack_lstsize(t_stack *lst)
 {
-	int	count;
-	t_stack *temp;
+	int			count;
+	t_stack		*temp;
 
 	count = 0;
 	temp = lst;

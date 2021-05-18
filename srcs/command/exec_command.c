@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 20:55:47 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/16 19:17:54 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/18 15:50:24 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void			b_cmd(t_stack **b_stack, char *cmd)
 void			same_cmd(t_stack **a_stack, t_stack **b_stack, char *cmd)
 {
 	if (ft_strcmp(cmd, "ss") == 0)
-		swap_s(a_stack, b_stack);	
+		swap_s(a_stack, b_stack);
 	else if (ft_strcmp(cmd, "ss") == 0)
 		swap_s(a_stack, b_stack);
 	else if (ft_strcmp(cmd, "rrr") == 0)
