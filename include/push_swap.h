@@ -6,7 +6,7 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 17:20:35 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/18 16:08:35 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/18 16:20:58 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define PUSH_SWAP_H
 # define SUCCESS 1
 # define FAILED 0
-# define INT_MAX 2147483647
+# define INT_MAX 2147483648
 # define INT_MIN -2147483647
 # include <unistd.h>
 # include <stdlib.h>

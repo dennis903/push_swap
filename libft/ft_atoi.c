@@ -6,14 +6,14 @@
 /*   By: hyeolee <hyeolee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 15:10:53 by hyeolee           #+#    #+#             */
-/*   Updated: 2021/05/18 15:37:18 by hyeolee          ###   ########.fr       */
+/*   Updated: 2021/05/18 16:19:06 by hyeolee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #define LLONG_MAX 9223372036854775807
 
-int						check_over_range(unsigned long long sum, int sign)
+long long				check_over_range(unsigned long long sum, int sign)
 {
 	if (sum > LLONG_MAX - 1 && sign == -1)
 		return (0);
